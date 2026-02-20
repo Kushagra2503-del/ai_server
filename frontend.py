@@ -54,3 +54,14 @@ if st.button("Calculate Probability of Survival"):
 
     st.line_chart(chart_data)
     st.caption("X-axis: Combat Tier (Level) | Y-axis: Training Hours")
+
+    # --- 6. AGENT GAMEPLAY SHOWCASE ---
+    st.divider()
+    st.subheader("🎥 Watch the AI in Action")
+    st.write("This is actual footage of my trained PPO agent navigating the VizDoom environment using raw pixel data.")
+
+    # Streamlit will look for the video file in your repository and play it!
+    try:
+        st.video("doom_final_cut.mp4")  # Make sure this matches your exact file name
+    except Exception as e:
+        st.info("Video file loading... Please ensure the mp4 is in the GitHub repository.")
