@@ -62,6 +62,6 @@ if st.button("Calculate Probability of Survival"):
 
     # Streamlit will look for the video file in your repository and play it!
     try:
-        st.video("doom_final_cut.mp4")  # Make sure this matches your exact file name
+        st.video("doom_gameplay_long.mp4")  # Make sure this matches your exact file name
     except Exception as e:
         st.info("Video file loading... Please ensure the mp4 is in the GitHub repository.")
